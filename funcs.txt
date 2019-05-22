@@ -1,4 +1,4 @@
-- Newsfeed -> stub feed with fake messages, just to show 
+- Newsfeed -> stub feed with fake messages, just to show	Done
 - Chat demo -> fake chat
 - Swipe between tabs  						Done
 - Shake to file error report					keep for last

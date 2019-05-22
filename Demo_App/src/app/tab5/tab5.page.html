@@ -3,9 +3,21 @@
     <ion-title>
       <p align="center">News</p>
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="large" (click)="refreshItems()">Refresh</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-text>Newsfeed here</ion-text>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of items">
+      <ion-item (click)="openItem(item)"> <!--item.id, item.title-->
+        <ion-label>
+          <ion-text text-left><h1>{{item.title}}</h1></ion-text><br>
+          <ion-text text-left >{{item.shortText}}</ion-text>
+        </ion-label>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>

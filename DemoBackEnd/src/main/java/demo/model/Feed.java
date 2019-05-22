@@ -16,7 +16,7 @@ public class Feed {
     }
 
     public void AddItem(String title, String shortText, String content){
-        items.add(new FeedItem(title, shortText, content));
+        items.add(new FeedItem(items.size(), title, shortText, content));
     }
 
     public List<FeedItem> getFeed() {
