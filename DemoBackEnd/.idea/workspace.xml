@@ -2,22 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff3aac9c-4d2e-4eff-88df-4a2f8330f679" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/model/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/demo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/demo/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/controller/FeedController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/model/Feed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/model/FeedItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/model/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Demo_App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.page.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -64,12 +69,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="193">
+              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,11 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -123,8 +124,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="252">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,12 +152,12 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/controller/DemoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/model/FeedItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/model/Feed.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/DB/UserRepository.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/demo/model/Users.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/controller/UserController.java" />
       </list>
     </option>
@@ -278,12 +282,12 @@
       <workItem from="1558509233041" duration="9057000" />
       <workItem from="1558610484046" duration="2127000" />
       <workItem from="1558613203916" duration="353000" />
-      <workItem from="1558613770062" duration="1306000" />
+      <workItem from="1558613770062" duration="3737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21032000" />
+    <option name="totallyTimeSpent" value="23463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -297,7 +301,7 @@
       <window_info id="Designer" order="5" />
       <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49837488" visible="true" weight="0.26012793" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="0" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Build" order="0" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -307,7 +311,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -373,6 +377,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/Users.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -390,13 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -407,24 +421,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        <state relative-caret-position="193">
+          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
           </folding>
         </state>
       </provider>

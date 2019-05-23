@@ -17,11 +17,12 @@ public class UserController {
 
     @RequestMapping(value = "/users", method = RequestMethod.GET)
     public List<User> getUsers() {
-        ArrayList<User> userList = new ArrayList<>();
-        for (User u: users.getUsers().values()) {
-            userList.add(u);
+        ArrayList<User> privList = new ArrayList<>();
+        for (User u : users.getUsers().values()) {
+            if(u.getUserType().equals("private")) privList.add(u);
         }
-        return userList;
+        //return new ArrayList<>(users.getUsers().values());
+        return privList;
     }
 
     @RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
