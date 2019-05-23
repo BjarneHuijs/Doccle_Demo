@@ -28,7 +28,8 @@ public class User {
     }
 
     private void setUserType(String userType) {
-        this.userType = userType;
+        if(userType.toLowerCase().equals("private") || userType.toLowerCase().equals("business"))
+            this.userType = userType;
     }
 
     public List<User> getConnections() {
