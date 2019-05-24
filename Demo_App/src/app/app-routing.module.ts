@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'chat', loadChildren: './chat/chat.module#ChatPageModule' },
 ];
 @NgModule({
   imports: [

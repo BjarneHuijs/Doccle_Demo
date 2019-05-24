@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {ModalController} from '@ionic/angular';
-import {FeedItemModalPage} from '../feed-item-modal/feed-item-modal.page';
 import {UserOverviewModalPage} from '../user-overview-modal/user-overview-modal.page';
 
 @Component({

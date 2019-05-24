@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff3aac9c-4d2e-4eff-88df-4a2f8330f679" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/controller/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/model/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/model/ChatSessions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/model/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -10,19 +14,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/controller/FeedController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/model/Feed.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/model/FeedItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/model/Users.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/demo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/demo/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/demo/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Demo_App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Demo_App/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/src/app/tab3/tab3.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Demo_App/src/app/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/src/app/tabs/tabs.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Demo_App/src/app/tabs/tabs.router.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo_App/src/app/tabs/tabs.router.module.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -45,20 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="361">
+              <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,14 +57,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+            <state relative-caret-position="151">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#813#814#0" expanded="true" />
                 <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/ChatController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,37 +97,8 @@
             <state relative-caret-position="63">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
-                <element signature="e#151#152#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
                 <element signature="e#245#246#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/Feed.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="31" column="5" selection-start-line="17" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#145#146#0" expanded="true" />
-                <element signature="e#186#187#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,10 +107,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="403">
+              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/ChatSessions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#89#90#0" expanded="true" />
+                <element signature="e#124#125#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/Chat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#632#633#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+              <folding>
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#280#281#0" expanded="true" />
+                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,10 +196,14 @@
         <option value="$PROJECT_DIR$/src/main/java/demo/DB/UserRepository.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/demo/model/Users.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/demo/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/controller/ChatController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/model/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/model/ChatSessions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/model/Chat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/demo/Main.java" />
       </list>
     </option>
   </component>
@@ -174,8 +219,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,12 +327,13 @@
       <workItem from="1558509233041" duration="9057000" />
       <workItem from="1558610484046" duration="2127000" />
       <workItem from="1558613203916" duration="353000" />
-      <workItem from="1558613770062" duration="3737000" />
+      <workItem from="1558613770062" duration="4352000" />
+      <workItem from="1558683214378" duration="4854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23463000" />
+    <option name="totallyTimeSpent" value="28932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -301,7 +347,7 @@
       <window_info id="Designer" order="5" />
       <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49837488" visible="true" weight="0.26012793" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Build" order="0" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Build" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -311,7 +357,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -348,20 +394,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/DB/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/DB/UserRepository.java" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+        <state relative-caret-position="714">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="126">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -377,57 +432,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/FeedController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="151">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/ChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/ChatSessions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#89#90#0" expanded="true" />
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="403">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/Users.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
           <folding>
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="361">
+          <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
           </folding>
         </state>
       </provider>

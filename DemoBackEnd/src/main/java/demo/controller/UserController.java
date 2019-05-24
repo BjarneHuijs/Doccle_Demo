@@ -1,5 +1,7 @@
 package demo.controller;
 
+import demo.model.Chat;
+import demo.model.ChatSessions;
 import demo.model.User;
 import demo.model.Users;
 import org.springframework.web.bind.annotation.*;
@@ -28,6 +30,11 @@ public class UserController {
     @RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
     public User getUser(@PathVariable String id) {
         return users.getUser(id);
+    }
+
+    @RequestMapping(value = "/chat{id}", method = RequestMethod.GET)
+    public Chat getChat(@PathVariable String id) {
+        return null;
     }
 
 }
