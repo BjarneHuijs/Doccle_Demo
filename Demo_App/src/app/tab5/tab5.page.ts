@@ -60,4 +60,25 @@ export class Tab5Page {
       console.log(this.items);
     });
   }
+
+  doRefresh(event) {
+    console.log('Pull Event Triggered!');
+    this.getItems();
+    setTimeout(() => {
+      console.log('Async operation has ended');
+
+      // complete()  signify that the refreshing has completed and to close the refresher
+      event.target.complete();
+    }, 2000);
+  }
+
+  ionPull(event) {
+    // Emitted while the user is pulling down the content and exposing the refresher.
+    console.log('ionPull Event Triggered!');
+  }
+
+  ionStart(event) {
+    // Emitted when the user begins to start pulling down.
+    console.log('ionStart Event Triggered!');
+  }
 }

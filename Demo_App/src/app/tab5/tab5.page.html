@@ -10,6 +10,17 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-refresher slot="fixed"
+                 (ionRefresh)="doRefresh($event)"
+                 (ionPull)="ionPull($event)"
+                 (ionStart)="ionStart($event)">
+    <ion-refresher-content
+            pullingIcon="arrow-dropdown"
+            pullingText="Pull to refresh"
+            refreshingSpinner="circles"
+            refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
   <ion-list>
     <ion-item-sliding *ngFor="let item of items">
       <ion-item (click)="openItem(item)"> <!--item.id, item.title-->

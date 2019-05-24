@@ -16,6 +16,7 @@ export class Tab3Page {
   }
 
   async showUserSelect() {
+    this.getUsers();
     const modal2 = await this.modalController.create({
       component: UserOverviewModalPage,
       componentProps: {
@@ -35,5 +36,4 @@ export class Tab3Page {
       console.log(this.users);
     });
   }
-
 }

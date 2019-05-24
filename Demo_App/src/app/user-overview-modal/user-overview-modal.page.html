@@ -7,7 +7,7 @@
 <ion-content padding>
   <ion-list>
     <ion-item-sliding *ngFor="let user of users">
-      <ion-item>{{user.email}}</ion-item>
+      <ion-item (click)="connectToUser(user.email)">{{user.email}}</ion-item>
     </ion-item-sliding>
   </ion-list>
 </ion-content>

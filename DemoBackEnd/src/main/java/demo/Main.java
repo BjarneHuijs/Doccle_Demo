@@ -22,13 +22,17 @@ public class Main {
             fc.feed.AddItem("testBlock4", "this is fourth testblock", "lorem ipsum lorem ipsum lorem ipsum lorem ipsum");
 
             uc.users.AddUser("testUser@users.be", "private");
+            uc.currentUser = uc.users.getUser("testUser@users.be");
             uc.users.AddUser("testUser02@users.be", "private");
             uc.users.AddUser("testUser03@users.be", "business");
             uc.users.AddUser("testUser04@users.be", "private");
 
-            Chat c1 = new Chat(uc.getUsers().get(0), uc.getUsers().get(1));
+            Chat c1 = new Chat(uc.getUser("testUser@users.be"), uc.getUser("testUser02@users.be"));
+            uc.getUser("testUser@users.be").addConnection(uc.getUser("testUser02@users.be"));
+
             c1.sendMessage("testUser@users.be", "hello, i am testing");
             cc.sessions.addChatSession(c1);
+            uc.setCC(cc);
 
         };
     }

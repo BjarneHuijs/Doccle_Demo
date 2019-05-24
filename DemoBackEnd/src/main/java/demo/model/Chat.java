@@ -11,11 +11,10 @@ public class Chat {
     private List<Message> messages;
 
     public Chat(User user1, User user2) {
-        this.id = user1.getEmail();
+        this.id = user2.getEmail();
         this.messages = new ArrayList<>();
         setU1(user1);
         setU2(user2);
-        u1.addConnection(u2);
         //u2.addConnection(u1);
     }
 
