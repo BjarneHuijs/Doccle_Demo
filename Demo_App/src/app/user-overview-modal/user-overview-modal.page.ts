@@ -30,6 +30,7 @@ export class UserOverviewModalPage {
     }, () => {
       console.log('POST request successfully sent');
     });
+    this.closeModal();
   }
 
   closeModal() {

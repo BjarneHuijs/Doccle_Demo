@@ -19,6 +19,10 @@ public class Feed {
         items.add(new FeedItem(items.size(), title, shortText, content));
     }
 
+    public void AddItem(FeedItem item){
+        items.add(item);
+    }
+
     public List<FeedItem> getFeed() {
         return items;
     }

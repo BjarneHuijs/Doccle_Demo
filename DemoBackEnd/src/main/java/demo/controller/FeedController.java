@@ -12,9 +12,12 @@ import java.util.List;
 public class FeedController {
 
     public Feed feed;
+    public List<FeedItem> articles;
+    private int i = 0;
 
     public FeedController() {
         feed = new Feed();
+        articles = new ArrayList<>();
     }
 
     @RequestMapping(value = "/feed", method = RequestMethod.GET)
@@ -38,8 +41,11 @@ public class FeedController {
 
     @RequestMapping(value = "/refreshFeed", method = RequestMethod.GET)
     public List<FeedItem> updateFeed() {
-
-        feed.AddItem("testBlock" + (feed.getFeed().size() + 1), "This is the " + (feed.getFeed().size() + 1) + "th test text", "lorem ipsum lorem ipsum lorem ipsum lorem ipsum\n lorem ipsum lorem ipsum lorem ipsum lorem ipsum");
+        if(i < articles.size()){
+            feed.AddItem(articles.get(i));
+            i++;
+        }
+        //feed.AddItem("testBlock" + (feed.getFeed().size() + 1), "This is the " + (feed.getFeed().size() + 1) + "th test text", "lorem ipsum lorem ipsum lorem ipsum lorem ipsum\n lorem ipsum lorem ipsum lorem ipsum lorem ipsum");
         return this.GetFeed();
     }
 }

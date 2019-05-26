@@ -1,22 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {interval} from 'rxjs';
 
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.page.html',
   styleUrls: ['./chat.page.scss'],
 })
-export class ChatPage {
+export class ChatPage implements OnInit, OnDestroy {
   chats: any;
   chat: any;
   messages: any;
   msgToSend: string;
   shown: boolean;
   clickedChat: string;
+  private timer;
 
   constructor(public http: HttpClient) {
     this.getChats();
     this.shown = false;
+  }
+
+  ngOnInit() {
+    this.timer = interval(5000);
+    this.timer.subscribe((t) => this.getChats());
   }
 
   getChats() {
@@ -56,7 +63,7 @@ export class ChatPage {
       headers: new HttpHeaders({'Content-type': 'application/json', Accept: 'application/json, */*'}),
     };
     const body = {
-      from: 'testUser@users.be',
+      from: 'Bjarne@users.be',
       message: this.msgToSend
     };
 
@@ -70,6 +77,10 @@ export class ChatPage {
       console.log('POST request successfully sent');
       this.msgToSend = '';
     });
+    this.getChats();
   }
 
+  ngOnDestroy() {
+    this.timer.unsubscribe();
+  }
 }
