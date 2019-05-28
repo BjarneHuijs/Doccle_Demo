@@ -1,17 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
+    <ion-title text-wrap>
       <h1>{{title}}</h1>
     </ion-title>
-    <ion-buttons slot="end">
-      <ion-button size="large" slot="icon-only" float-right (click)="closeModal()">
-        <ion-icon name="close-circle-outline"></ion-icon>
-      </ion-button>
+    <ion-buttons slot="primary">
+      <ion-title><p><ion-button (click)="closeModal()">
+        <ion-icon size="large" name="close-circle-outline"></ion-icon>
+      </ion-button></p></ion-title>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <br><br>
-  <ion-text>{{content}}</ion-text>
+<ion-content padding>
+  <ion-text text-wrap>{{content}}</ion-text>
 </ion-content>

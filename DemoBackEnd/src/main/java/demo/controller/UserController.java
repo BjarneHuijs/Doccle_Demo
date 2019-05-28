@@ -32,6 +32,17 @@ public class UserController {
         return privList;
     }
 
+    @RequestMapping(value = "/connectedUsers", method = RequestMethod.GET)
+    public List<User> getConUsers() {
+        ArrayList<User> privList = new ArrayList<>();
+        for (User u : users.getUsers().values()) {
+            if(u.getUserType().equals("private")
+                    && !u.getEmail().equals(currentUser.getEmail())
+                    && currentUser.getConnections().contains(u)) { privList.add(u); }
+        }
+        return privList;
+    }
+
     @RequestMapping(value = "/users/{id}", method = RequestMethod.GET)
     public User getUser(@PathVariable String id) {
         return users.getUser(id);

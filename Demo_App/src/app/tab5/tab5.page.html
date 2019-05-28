@@ -1,10 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      <p align="center">News</p>
-    </ion-title>
-    <ion-buttons slot="end">
-      <ion-button size="large" (click)="refreshItems()">Refresh</ion-button>
+    <ion-title ><p class="title" align="center">News </p></ion-title>
+    <ion-buttons slot="primary">
+      <ion-title><p><ion-button (click)="refreshItems()"><ion-icon size="large" name="refresh"></ion-icon></ion-button></p></ion-title>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -23,7 +21,7 @@
   </ion-refresher>
   <ion-list>
     <ion-item-sliding *ngFor="let item of items">
-      <ion-item (click)="openItem(item)"> <!--item.id, item.title-->
+      <ion-item (click)="openItem(item)">
         <ion-label>
           <ion-text text-left><h1>{{item.title}}</h1></ion-text><br>
           <ion-text text-left >{{item.shortText}}</ion-text>

@@ -51,7 +51,9 @@ public class Chat {
         if(content.equals("Hallo") || content.equals("Hey")) {
             messages.add(new Message(u2.getEmail(), "Hallo, wat kan ik voor je doen?"));
         }
-        if(content.equals("Kan je me de rekenening van ons Telenet abonnement doorsturen?") || content.equals("Wil je me de Telenetrekening doorsturen?")) {
+        if(content.equals("Kan je me de rekenening van ons telenet abonnement doorsturen?") ||
+                content.equals("Wil je me de telenetrekening doorsturen?") ||
+                content.equals("Wil je me de rekening doorsturen alstublieft?")) {
             messages.add(new Message(u2.getEmail(), "Zeker, ik stuur deze direct door! Je zou hem binnen een minuutje op je documenten moeten kunnen zien."));
         }
         return getMessages();

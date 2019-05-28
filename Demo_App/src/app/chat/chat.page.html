@@ -18,8 +18,8 @@
 
       <ion-item *ngIf="messages != null && clickedChat == chat.id" class="input">
         <ion-input (keyup.enter)="sendMessage(chat)" placeholder="Write a message here" [(ngModel)]="msgToSend"></ion-input>
-        <ion-button><ion-icon name="add-circle-outline"></ion-icon></ion-button>
-        <ion-button (click)="sendMessage(chat)">Send Message</ion-button>
+        <ion-button expand="block"><ion-icon name="add-circle-outline"></ion-icon></ion-button>
+        <ion-button expand="block" (click)="sendMessage(chat)">Send Message</ion-button>
       </ion-item>
     </ion-item-sliding>
 
