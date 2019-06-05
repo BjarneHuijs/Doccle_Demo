@@ -35,7 +35,9 @@ public class FeedController {
         for(int i = 0; i < feed.getFeed().size(); i++) {
             if(feed.getItem(i).getTitle().equals(title)){id = i;}
         }
-        if(title != null && id >= 0){ return feed.getItem(id); }
+        if(title != null && id >= 0){
+            System.out.println(feed.getItem(id).getLink());
+            return feed.getItem(id); }
         else throw new IllegalArgumentException("this item does not exist, please refresh your feed");
     }
 

@@ -40,3 +40,9 @@ jib {
     }
     allowInsecureRegistries = true
 }
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'demo.Main'
+    }
+}

@@ -22,7 +22,7 @@ export class ChatPage implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.timer = interval(60000);
+    this.timer = interval(5000);
     this.timer.subscribe((t) => this.getChats());
   }
 

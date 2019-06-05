@@ -17,8 +17,16 @@ ion-title {
   color: white;
 }
 
-ion-buttons, ion-toolbar, ion-header {
+ion-buttons, ion-toolbar {
   background-color: #383a3e;
   border-color: #383a3e;
 }
 
+.doccle {
+  background-image: url("../resources/docclebalk.PNG");
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  font-size: 0px;
+  height: 10px;
+}

@@ -6,6 +6,7 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+<p class="doccle"></p>
 
 <ion-content padding>
   <ion-refresher slot="fixed"
@@ -22,6 +23,7 @@
   <ion-list>
     <ion-item-sliding *ngFor="let item of items">
       <ion-item (click)="openItem(item)">
+        <ion-icon name="image" size="large"></ion-icon>
         <ion-label>
           <ion-text text-left><h1>{{item.title}}</h1></ion-text><br>
           <ion-text text-left >{{item.shortText}}</ion-text>

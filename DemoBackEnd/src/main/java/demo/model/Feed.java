@@ -15,8 +15,8 @@ public class Feed {
         setItems(content);
     }
 
-    public void AddItem(String title, String shortText, String content){
-        items.add(new FeedItem(items.size(), title, shortText, content));
+    public void AddItem(String title, String shortText, String content, String url){
+        items.add(new FeedItem(items.size(), title, shortText, content, url));
     }
 
     public void AddItem(FeedItem item){

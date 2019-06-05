@@ -5,12 +5,14 @@ public class FeedItem {
     private String title;
     private String shortText;
     private String content;
+    private String link;
 
-    public FeedItem(int id, String title, String shortText, String contents){
+    public FeedItem(int id, String title, String shortText, String contents, String link){
         setId(id);
         setContent(contents);
         setShortText(shortText);
         setTitle(title);
+        this.link = link;
     }
 
     public int getId() { return this.id; }
@@ -20,6 +22,8 @@ public class FeedItem {
     public String getTitle() {
         return title;
     }
+
+    public String getLink() { return link; }
 
     private void setTitle(String title) {
         this.title = title;

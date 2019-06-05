@@ -33,9 +33,11 @@ export class Tab5Page {
       component: FeedItemModalPage,
       componentProps: {
         title: item.title,
-        content: item.content
+        content: item.content,
+        link: item.link
       }
     });
+    console.log(item.link);
     return await modal.present();
   }
 
@@ -46,7 +48,6 @@ export class Tab5Page {
 
     this.http.get('http://localhost:8080/feed/' + title, options).subscribe(data => {
       this.item = data;
-      console.log(this.item);
     });
   }
 
